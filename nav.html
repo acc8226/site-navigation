@@ -9,17 +9,11 @@
     <meta name="keywords" content="网址导航">
     <meta name="description" content="网址导航">
     <meta name='robots' content='max-image-preview:large' />
-    <link rel='stylesheet' id='font-awesome-css'
-        href='https://fastly.jsdelivr.net/npm/font-awesome@4.7.0/css/font-awesome.min.css?ver=5.9.3' type='text/css'
-        media='all' />
-    <link rel='stylesheet' id='bootstrap-css'
-        href='https://fastly.jsdelivr.net/npm/bootstrap@3.4.1/dist/css/bootstrap.min.css?ver=5.9.3' type='text/css'
-        media='all' />
-    <link rel='stylesheet' id='nav-css'
-        href='https://tools.liumingye.cn/wp-content/themes/WebStack/css/nav.css?ver=5.9.3' type='text/css'
-        media='all' />
-    <script type='text/javascript' src='https://fastly.jsdelivr.net/npm/jquery@1.11.1/dist/jquery.min.js?ver=5.9.3'
-        id='jquery-js'></script>
+    <link rel='stylesheet' id='font-awesome-css'  href='https://fastly.jsdelivr.net/npm/font-awesome@4.7.0/css/font-awesome.min.css?ver=5.9.3' type='text/css' media='all' />
+    <!-- <link rel='stylesheet' id='font-awesome-css' href='./nav-css/font-awesome.min.css' type='text/css' media='all' /> -->
+    <link rel='stylesheet' id='bootstrap-css' href='./nav-css/bootstrap.min.css' type='text/css' media='all' />
+    <link rel='stylesheet' id='nav-css' href='./nav-css/nav.css' type='text/css' media='all' />
+    <script src='./nav-js/jquery.min.js' id='jquery-js'></script>
 </head>
 
 <body class="page-body white">
@@ -30,13 +24,11 @@
                 <header class="logo-env">
                     <!-- logo -->
                     <div class="logo">
-                        <a href="https://tools.liumingye.cn" class="logo-expanded">
-                            <img src="./nav-imgs/blank.jpg" height="40"
-                                alt="网址导航" />
+                        <a href="https://kailee.gitee.io/html-nav/nav.html" class="logo-expanded">
+                            <img src="./nav-imgs/blank.jpg" height="40" alt="ac 网址导航" />
                         </a>
-                        <a href="https://tools.liumingye.cn" class="logo-collapsed">
-                            <img src="./nav-imgs/logo-collapsed.png" height="40"
-                                alt="网址导航">
+                        <a href="https://kailee.gitee.io/html-nav/nav.html" class="logo-collapsed">
+                            <img src="./nav-imgs/favicon.png" height="40" alt="ac 网址导航">
                         </a>
                     </div>
                     <div class="mobile-menu-toggle visible-xs">
@@ -55,37 +47,37 @@
                     </li>
 
                     <li>
-                        <a href="#影音专区" class="smooth">
+                        <a href="#学习相关" class="smooth">
                             <i class="fa fa-fw"></i>
-                            <span class="title">影音专区</span>
+                            <span class="title">学习相关</span>
                         </a>
                     </li>
 
                     <li>
-                        <a href="#图片相关" class="smooth">
+                        <a href="#娱乐相关" class="smooth">
                             <i class="fa fa-fw"></i>
-                            <span class="title">图片相关</span>
+                            <span class="title">娱乐相关</span>
                         </a>
                     </li>
 
                     <li>
-                        <a href="#游戏相关" class="smooth">
+                        <a href="#内网相关" class="smooth">
                             <i class="fa fa-fw"></i>
-                            <span class="title">游戏相关</span>
+                            <span class="title">内网相关</span>
                         </a>
                     </li>
 
                     <li>
-                        <a href="#其他工具" class="smooth">
+                        <a href="#技术相关" class="smooth">
                             <i class="fa fa-fw"></i>
-                            <span class="title">其他工具</span>
+                            <span class="title">技术相关</span>
                         </a>
                     </li>
 
                     <li>
-                        <a href="#编程开发" class="smooth">
+                        <a href="#其他" class="smooth">
                             <i class="fa fa-fw"></i>
-                            <span class="title">编程开发</span>
+                            <span class="title">其他</span>
                         </a>
                     </li>
 
@@ -183,17 +175,14 @@
                     <div class="search-group group-d">
                         <span class="type-text">音乐</span>
                         <ul class="search-type">
-                            <li><input hidden hidden="" type="radio" name="type" id="type-163"
-                                    value="https://music.163.com/#/search/m/?s=" data-placeholder="网易云音乐搜索">
-                                <label for="type-163" class="metaColor transition">网易云音乐</label>
-                            </li>
-                            <li><input hidden hidden="" type="radio" name="type" id="type-baidu-music"
-                                    value="https://music.baidu.com/search?key=" data-placeholder="百度音乐"><label
-                                    for="type-baidu-music" class="metaColor transition">百度音乐</label></li>
                             <li><input hidden hidden="" type="radio" name="type" id="type-qq-music"
                                     value="https://y.qq.com/portal/search.html#searchid=1&amp;remoteplace=txt.yqq.top&amp;t=song&amp;w="
                                     data-placeholder="QQ 音乐"><label for="type-qq-music" class="metaColor transition">QQ
                                     音乐</label></li>
+                            <li><input hidden hidden="" type="radio" name="type" id="type-163"
+                                    value="https://music.163.com/#/search/m/?s=" data-placeholder="网易云音乐搜索">
+                                <label for="type-163" class="metaColor transition">网易云音乐</label>
+                            </li>
                         </ul>
                     </div>
                     <div class="search-group group-e">
@@ -209,10 +198,6 @@
                             <li><input hidden type="radio" name="type" id="type-youku"
                                     value="https://www.soku.com/search_video/q_" data-placeholder="优酷视频搜索"><label
                                     for="type-youku" class="metaColor transition">优酷</label></li>
-                            <li><input hidden type="radio" name="type" id="type-youtube"
-                                    value="https://www.youtube.com/results?search_query="
-                                    data-placeholder="Youtube 视频搜索"><label for="type-youtube"
-                                    class="metaColor transition">Youtube</label></li>
                         </ul>
                     </div>
                     <div class="search-group group-f">
@@ -235,12 +220,6 @@
                             <li><input hidden type="radio" name="type" id="type-dangdang"
                                     value="https://search.dangdang.com/?key=" data-placeholder="当当商品搜索"><label
                                     for="type-dangdang" class="metaColor transition">当当</label></li>
-                            <li><input hidden type="radio" name="type" id="type-meituan"
-                                    value="https://cd.meituan.com/s/?w=" data-placeholder="美团商品搜索"><label
-                                    for="type-meituan" class="metaColor transition">美团</label></li>
-                            <li><input hidden type="radio" name="type" id="type-ebay" value="http://www.ebay.com/sch/"
-                                    data-placeholder="eBay 商品搜索"><label for="type-ebay"
-                                    class="metaColor transition">eBay</label></li>
                         </ul>
                     </div>
                 </div>
@@ -252,414 +231,336 @@
                 </div>
             </div>
             <script>
-                !function () { function g() { h(), i(), j(), k() } function h() { d.checked = s() } function i() { var a = document.querySelector('input[name="type"][value="' + p() + '"]'); a && (a.checked = !0, l(a)) } function j() { v(u()) } function k() { w(t()) } function l(a) { for (var b = 0; b < e.length; b++)e[b].classList.remove("s-current"); a.parentNode.parentNode.parentNode.classList.add("s-current") } function m(a, b) { window.localStorage.setItem("superSearch" + a, b) } function n(a) { return window.localStorage.getItem("superSearch" + a) } function o(a) { f = a.target, v(u()), w(a.target.value), m("type", a.target.value), c.focus(), l(a.target) } function p() { var b = n("type"); return b || a[0].value } function q(a) { m("newWindow", a.target.checked ? 1 : -1), x(a.target.checked) } function r(a) { return a.preventDefault(), "" == c.value ? (c.focus(), !1) : (w(t() + c.value), x(s()), s() ? window.open(b.action, +new Date) : location.href = b.action, void 0) } function s() { var a = n("newWindow"); return a ? 1 == a : !0 } function t() { return document.querySelector('input[name="type"]:checked').value } function u() { return document.querySelector('input[name="type"]:checked').getAttribute("data-placeholder") } function v(a) { c.setAttribute("placeholder", a) } function w(a) { b.action = a } function x(a) { a ? b.target = "_blank" : b.removeAttribute("target") } var y, a = document.querySelectorAll('input[name="type"]'), b = document.querySelector("#super-search-fm"), c = document.querySelector("#search-text"), d = document.querySelector("#set-search-blank"), e = document.querySelectorAll(".search-group"), f = a[0]; for (g(), y = 0; y < a.length; y++)a[y].addEventListener("change", o); d.addEventListener("change", q), b.addEventListener("submit", r) }();
+                !function(){function g(){h(),i(),j(),k()}function h(){d.checked=s()}function i(){var a=document.querySelector('input[name="type"][value="'+p()+'"]');a&&(a.checked=!0,l(a))}function j(){v(u())}function k(){w(t())}function l(a){for(var b=0;b<e.length;b++)e[b].classList.remove("s-current");a.parentNode.parentNode.parentNode.classList.add("s-current")}function m(a,b){window.localStorage.setItem("superSearch"+a,b)}function n(a){return window.localStorage.getItem("superSearch"+a)}function o(a){f=a.target,v(u()),w(a.target.value),m("type",a.target.value),c.focus(),l(a.target)}function p(){var b=n("type");return b||a[0].value}function q(a){m("newWindow",a.target.checked?1:-1),x(a.target.checked)}function r(a){return a.preventDefault(),""==c.value?(c.focus(),!1):(w(t()+c.value),x(s()),s()?window.open(b.action,+new Date):location.href=b.action,void 0)}function s(){var a=n("newWindow");return a?1==a:!0}function t(){return document.querySelector('input[name="type"]:checked').value}function u(){return document.querySelector('input[name="type"]:checked').getAttribute("data-placeholder")}function v(a){c.setAttribute("placeholder",a)}function w(a){b.action=a}function x(a){a?b.target="_blank":b.removeAttribute("target")}var y,a=document.querySelectorAll('input[name="type"]'),b=document.querySelector("#super-search-fm"),c=document.querySelector("#search-text"),d=document.querySelector("#set-search-blank"),e=document.querySelectorAll(".search-group"),f=a[0];for(g(),y=0;y<a.length;y++)a[y].addEventListener("change",o);d.addEventListener("change",q),b.addEventListener("submit",r)}();
             </script>
             <div class="sites-list" style="margin-bottom: 8.5rem;">
                 <div class="row">
                     <div class="ad ad-home col-md-6">
-                        <ins class="adsbygoogle" style="display:block; text-align:center;" data-ad-layout="in-article"></ins>
+                        <ins class="adsbygoogle" style="display:block; text-align:center;"
+                            data-ad-layout="in-article"></ins>
                     </div>
                     <div class="ad ad-home col-md-6 visible-md-block visible-lg-block">
-                        <ins class="adsbygoogle" style="display:block; text-align:center;" data-ad-layout="in-article"></ins>
+                        <ins class="adsbygoogle" style="display:block; text-align:center;"
+                            data-ad-layout="in-article"></ins>
                     </div>
                 </div>
 
                 <h4 class="text-gray" style="display: inline-block;" id="常用工具">常用工具</h4>
                 <div class="row">
                     <div class="xe-card col-sm-4 col-md-3 ">
-
-                        <a href="https://watermark.liumingye.cn" target="_blank"
-                            class="xe-widget xe-conversations box2 label-info" data-toggle="tooltip"
-                            data-placement="bottom" title="https://watermark.liumingye.cn">
-                            <div class="xe-comment-entry">
-                                <div class="xe-user-img">
-                                    <img class="img-circle lazy"
-                                        src="https://fastly.jsdelivr.net/gh/5ime/img/avatar.jpg"
-                                        onerror="javascript:this.src='https://tools.liumingye.cn/wp-content/themes/WebStack/images/favicon.png'"
-                                        width="40">
-                                </div>
-                                <div class="xe-comment">
-                                    <div class="xe-user-name overflowClip_1">
-                                        <strong>短视频/图集在线去水印解析</strong>
-                                    </div>
-                                    <p class="overflowClip_2">抖音快手等16个平台视频去水印下载</p>
-                                </div>
-                            </div>
-                        </a>
-
-                    </div>
-                    <div class="xe-card col-sm-4 col-md-3 ">
-                        <a href="https://qwerty.liumingye.cn" target="_blank"
-                            class="xe-widget xe-conversations box2 label-info" data-toggle="tooltip"
-                            data-placement="bottom" title="https://qwerty.liumingye.cn">
-                            <div class="xe-comment-entry">
-                                <div class="xe-user-img">
-                                    <img class="img-circle lazy"
-                                        src="https://ae01.alicdn.com/kf/H06cc340673be400f82dd85b83dae0a4dt.jpg"
-                                        onerror="javascript:this.src='https://tools.liumingye.cn/wp-content/themes/WebStack/images/favicon.png'"
-                                        width="40">
-                                </div>
-                                <div class="xe-comment">
-                                    <div class="xe-user-name overflowClip_1">
-                                        <strong>Qwerty Learner</strong>
-                                    </div>
-                                    <p class="overflowClip_2">为键盘工作者设计的单词记忆与英语肌肉记忆锻炼软件</p>
-                                </div>
-                            </div>
-                        </a>
-
-                    </div>
-                    <div class="xe-card col-sm-4 col-md-3 ">
-                        <a href="https://epub.liumingye.cn" target="_blank"
-                            class="xe-widget xe-conversations box2 label-info" data-toggle="tooltip"
-                            data-placement="bottom" title="https://epub.liumingye.cn">
-                            <div class="xe-comment-entry">
-                                <div class="xe-user-img">
-                                    <img class="img-circle lazy"
-                                        src="https://ae01.alicdn.com/kf/H6d08324d3b254e3582d4f1e2b2807dbdI.jpg"
-                                        onerror="javascript:this.src='https://tools.liumingye.cn/wp-content/themes/WebStack/images/favicon.png'"
-                                        width="40">
-                                </div>
-                                <div class="xe-comment">
-                                    <div class="xe-user-name overflowClip_1">
-                                        <strong>epub阅读器</strong>
-                                    </div>
-                                    <p class="overflowClip_2">简单的 EPUB 电子书在线阅读器</p>
-                                </div>
-                            </div>
-                        </a>
-
-                    </div>
-                    <div class="xe-card col-sm-4 col-md-3 ">
-
-                        <a href="https://paste.liumingye.cn" target="_blank"
-                            class="xe-widget xe-conversations box2 label-info" data-toggle="tooltip"
-                            data-placement="bottom" title="https://paste.liumingye.cn">
-                            <div class="xe-comment-entry">
-                                <div class="xe-user-img">
-                                    <img class="img-circle lazy"
-                                        src="https://ae01.alicdn.com/kf/H376820f3a08a494f881f8b6a8937289fo.jpg"
-                                        onerror="javascript:this.src='https://tools.liumingye.cn/wp-content/themes/WebStack/images/favicon.png'"
-                                        width="40">
-                                </div>
-                                <div class="xe-comment">
-                                    <div class="xe-user-name overflowClip_1">
-                                        <strong>PasteMe</strong>
-                                    </div>
-                                    <p class="overflowClip_2">快速分享文本，支持加密、一键复制、永久保存、阅后即焚等功能</p>
-                                </div>
-                            </div>
-                        </a>
-
-                    </div>
-                    <div class="xe-card col-sm-4 col-md-3 ">
-
-                        <a href="https://bgm.liumingye.cn" target="_blank"
-                            class="xe-widget xe-conversations box2 label-info" data-toggle="tooltip"
-                            data-placement="bottom" title="https://bgm.liumingye.cn">
-                            <div class="xe-comment-entry">
-                                <div class="xe-user-img">
-                                    <img class="img-circle lazy"
-                                        src="https://ae01.alicdn.com/kf/He2ffc89507ca498489fd33428a4a640cC.jpg"
-                                        onerror="javascript:this.src='https://tools.liumingye.cn/wp-content/themes/WebStack/images/favicon.png'"
-                                        width="40">
-                                </div>
-                                <div class="xe-comment">
-                                    <div class="xe-user-name overflowClip_1">
-                                        <strong>番组放送</strong>
-                                    </div>
-                                    <p class="overflowClip_2">新番放送兼版权引进播放地址聚合站</p>
-                                </div>
-                            </div>
-                        </a>
-                    </div>
-
-                    <div class="xe-card col-sm-4 col-md-3 ">
-                        <a href="https://tool.liumingye.cn/avbv" target="_blank"
-                            class="xe-widget xe-conversations box2 label-info" data-toggle="tooltip"
-                            data-placement="bottom" title="https://tool.liumingye.cn/avbv">
-                            <div class="xe-comment-entry">
-                                <div class="xe-user-img">
-                                    <img class="img-circle lazy"
-                                        src="https://ae01.alicdn.com/kf/Hf2f02939cecd464481485afce03fc43cU.jpg"
-                                        onerror="javascript:this.src='https://tools.liumingye.cn/wp-content/themes/WebStack/images/favicon.png'"
-                                        width="40">
-                                </div>
-                                <div class="xe-comment">
-                                    <div class="xe-user-name overflowClip_1">
-                                        <strong>哔哩哔哩 AV/BV 转换</strong>
-                                    </div>
-                                    <p class="overflowClip_2">在线哔哩哔哩 AV/BV 互相转换</p>
-                                </div>
-                            </div>
-                        </a>
-                    </div>
-
-                    <div class="xe-card col-sm-4 col-md-3 ">
-                        <a href="https://tool.liumingye.cn/tuchuang" target="_blank"
-                            class="xe-widget xe-conversations box2 label-info" data-toggle="tooltip"
-                            data-placement="bottom" title="https://tool.liumingye.cn/tuchuang">
-                            <div class="xe-comment-entry">
-                                <div class="xe-user-img">
-                                    <img class="img-circle lazy"
-                                        src="https://ae01.alicdn.com/kf/H39299b2944ec4847ba91cd236c383c64F.jpg"
-                                        onerror="javascript:this.src='https://tools.liumingye.cn/wp-content/themes/WebStack/images/favicon.png'"
-                                        width="40">
-                                </div>
-                                <div class="xe-comment">
-                                    <div class="xe-user-name overflowClip_1">
-                                        <strong>免费图床 4月14日更新</strong>
-                                    </div>
-                                    <p class="overflowClip_2">无限空间、无限流量、无限数量，高速又稳定的图床</p>
-                                </div>
-                            </div>
-                        </a>
-                    </div>
-
-                    <div class="xe-card col-sm-4 col-md-3 ">
-                        <a href="https://www.ithome.com" target="_blank"
+                        <a href="https://www.ithome.com/" target="_blank"
                             class="xe-widget xe-conversations box2 label-info" data-toggle="tooltip"
                             data-placement="bottom" title="https://www.ithome.com">
                             <div class="xe-comment-entry">
                                 <div class="xe-user-img">
-                                    <img class="img-circle lazy"
-                                        src="https://www.ithome.com/favicon.ico"
-                                        onerror="javascript:this.src='https://tools.liumingye.cn/wp-content/themes/WebStack/images/favicon.png'"
-                                        width="40">
+                                    <img class="img-circle lazy" src="./nav-imgs/ithome.ico"
+                                        onerror="javascript:this.src='./nav-imgs/favicon.png'" width="40">
                                 </div>
                                 <div class="xe-comment">
                                     <div class="xe-user-name overflowClip_1">
                                         <strong>IT 之家</strong>
                                     </div>
-                                    <p class="overflowClip_2">最新的 IT 资讯</p>
+                                    <p class="overflowClip_2">快速获取最新 IT 资讯</p>
                                 </div>
                             </div>
                         </a>
                     </div>
 
+                    <div class="xe-card col-sm-4 col-md-3 ">
+                        <a href="https://www.jianshu.com/" target="_blank"
+                            class="xe-widget xe-conversations box2 label-info" data-toggle="tooltip"
+                            data-placement="bottom" title="https://www.jianshu.com/">
+                            <div class="xe-comment-entry">
+                                <div class="xe-user-img">
+                                    <img class="img-circle lazy" src="./nav-imgs/jianshu.ico"
+                                        onerror="javascript:this.src='./nav-imgs/favicon.png'" width="40">
+                                </div>
+                                <div class="xe-comment">
+                                    <div class="xe-user-name overflowClip_1">
+                                        <strong>简书</strong>
+                                    </div>
+                                    <p class="overflowClip_2">我的常用写作平台</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="xe-card col-sm-4 col-md-3 ">
+                        <a href="https://www.json.cn/" target="_blank"
+                            class="xe-widget xe-conversations box2 label-info" data-toggle="tooltip"
+                            data-placement="bottom" title="https://www.json.cn/">
+                            <div class="xe-comment-entry">
+                                <div class="xe-user-img">
+                                    <img class="img-circle lazy" src="./nav-imgs/json.cn.ico"
+                                        onerror="javascript:this.src='./nav-imgs/favicon.png'" width="40">
+                                </div>
+                                <div class="xe-comment">
+                                    <div class="xe-user-name overflowClip_1">
+                                        <strong>JSON 格式化</strong>
+                                    </div>
+                                    <p class="overflowClip_2">JSON 在线解析及格式化验证</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="xe-card col-sm-4 col-md-3 ">
+                        <a href="https://fanyi.caiyunapp.com/#/" target="_blank"
+                            class="xe-widget xe-conversations box2 label-info" data-toggle="tooltip"
+                            data-placement="bottom" title="https://epub.liumingye.cn">
+                            <div class="xe-comment-entry">
+                                <div class="xe-user-img">
+                                    <img class="img-circle lazy" src="./nav-imgs/caiyun.png"
+                                        onerror="javascript:this.src='https://tools.liumingye.cn/wp-content/themes/WebStack/images/favicon.png'"
+                                        width="40">
+                                </div>
+                                <div class="xe-comment">
+                                    <div class="xe-user-name overflowClip_1">
+                                        <strong>彩云小译</strong>
+                                    </div>
+                                    <p class="overflowClip_2">网页翻译-在线翻译</p>
+                                </div>
+                            </div>
+                        </a>
+
+                    </div>
+                    <div class="xe-card col-sm-4 col-md-3 ">
+
+                        <a href="https://tool.oschina.net/codeformat/xml" target="_blank"
+                            class="xe-widget xe-conversations box2 label-info" data-toggle="tooltip"
+                            data-placement="bottom" title="https://tool.oschina.net/codeformat/xml">
+                            <div class="xe-comment-entry">
+                                <div class="xe-user-img">
+                                    <img class="img-circle lazy" src="./nav-imgs/oschina.ico"
+                                        onerror="javascript:this.src='https://tools.liumingye.cn/wp-content/themes/WebStack/images/favicon.png'"
+                                        width="40">
+                                </div>
+                                <div class="xe-comment">
+                                    <div class="xe-user-name overflowClip_1">
+                                        <strong>XML 格式化</strong>
+                                    </div>
+                                    <p class="overflowClip_2"></p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
                 </div>
                 <br />
-                <h4 class="text-gray" style="display: inline-block;" id="影音专区">影音专区</h4>
+                <h4 class="text-gray" style="display: inline-block;" id="学习相关">学习相关</h4>
+                <div class="row">
+                    <div class="xe-card col-sm-4 col-md-3 ">
+                        <a href="https://weread.qq.com/" target="_blank"
+                            class="xe-widget xe-conversations box2 label-info" data-toggle="tooltip"
+                            data-placement="bottom" title="https://weread.qq.com/">
+                            <div class="xe-comment-entry">
+                                <div class="xe-user-img">
+                                    <img class="img-circle lazy" src="./nav-imgs/wxreader.ico"
+                                        onerror="javascript:this.src='https://tools.liumingye.cn/wp-content/themes/WebStack/images/favicon.png'"
+                                        width="40">
+                                </div>
+                                <div class="xe-comment">
+                                    <div class="xe-user-name overflowClip_1">
+                                        <strong>微信读书</strong>
+                                    </div>
+                                    <p class="overflowClip_2">微信读书-正版书籍小说免费阅读</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="xe-card col-sm-4 col-md-3 ">
+                        <a href="https://leetcode.cn/" target="_blank"
+                            class="xe-widget xe-conversations box2 label-info" data-toggle="tooltip"
+                            data-placement="bottom" title="https://leetcode.cn/">
+                            <div class="xe-comment-entry">
+                                <div class="xe-user-img">
+                                    <img class="img-circle lazy" src="./nav-imgs/leecode.ico"
+                                        onerror="javascript:this.src='https://tools.liumingye.cn/wp-content/themes/WebStack/images/favicon.png'"
+                                        width="40">
+                                </div>
+                                <div class="xe-comment">
+                                    <div class="xe-user-name overflowClip_1">
+                                        <strong>leetcode</strong>
+                                    </div>
+                                    <p class="overflowClip_2">力扣（LeetCode） - 全球极客挚爱的技术成长平台</p>
+                                </div>
+                            </div>
+                        </a>
+
+                    </div>
+                    <div class="xe-card col-sm-4 col-md-3 ">
+
+                        <a href="https://www.ituring.com.cn/" target="_blank"
+                            class="xe-widget xe-conversations box2 label-info" data-toggle="tooltip"
+                            data-placement="bottom" title="https://www.ituring.com.cn/">
+                            <div class="xe-comment-entry">
+                                <div class="xe-user-img">
+                                    <img class="img-circle lazy"
+                                        src="./nav-imgs/ituring.webp"
+                                        onerror="javascript:this.src='https://tools.liumingye.cn/wp-content/themes/WebStack/images/favicon.png'"
+                                        width="40">
+                                </div>
+                                <div class="xe-comment">
+                                    <div class="xe-user-name overflowClip_1">
+                                        <strong>图灵社区</strong>
+                                    </div>
+                                    <p class="overflowClip_2">技术书籍</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="xe-card col-sm-4 col-md-3 ">
+                        <a href="https://www.qikegu.com/" target="_blank"
+                            class="xe-widget xe-conversations box2 label-info" data-toggle="tooltip"
+                            data-placement="bottom" title="https://www.qikegu.com/">
+                            <div class="xe-comment-entry">
+                                <div class="xe-user-img">
+                                    <img class="img-circle lazy"
+                                        src="https://ae01.alicdn.com/kf/H1e9c800bdc4840d48bee31acfdb41f06J.jpg"
+                                        onerror="javascript:this.src='https://tools.liumingye.cn/wp-content/themes/WebStack/images/favicon.png'"
+                                        width="40">
+                                </div>
+                                <div class="xe-comment">
+                                    <div class="xe-user-name overflowClip_1">
+                                        <strong>奇客谷教程</strong>
+                                    </div>
+                                    <p class="overflowClip_2">精品编程教程与实例，互联网技术研究</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="xe-card col-sm-4 col-md-3 ">
+                        <a href="https://edu.aliyun.com/roadmap/java" target="_blank"
+                            class="xe-widget xe-conversations box2 label-info" data-toggle="tooltip"
+                            data-placement="bottom" title="https://edu.aliyun.com/roadmap/java">
+                            <div class="xe-comment-entry">
+                                <div class="xe-user-img">
+                                    <img class="img-circle lazy" src="./nav-imgs/aliyun.ico"
+                                        onerror="javascript:this.src='https://tools.liumingye.cn/wp-content/themes/WebStack/images/favicon.png'"
+                                        width="40">
+                                </div>
+                                <div class="xe-comment">
+                                    <div class="xe-user-name overflowClip_1">
+                                        <strong>Java 学习</strong>
+                                    </div>
+                                    <p class="overflowClip_2">Java学习路线（学+测） - 阿里云全球培训中心</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+
+                <br />
+                <h4 class="text-gray" style="display: inline-block;" id="娱乐相关">娱乐相关</h4>
                 <div class="row">
                     <div class="xe-card col-sm-4 col-md-3 ">
 
-                        <a href="https://yun.hei521.cn" target="_blank"
+                        <a href="https://www.toutiao.com/" target="_blank"
                             class="xe-widget xe-conversations box2 label-info" data-toggle="tooltip"
-                            data-placement="bottom" title="https://yun.hei521.cn">
+                            data-placement="bottom" title="https://www.toutiao.com/">
                             <div class="xe-comment-entry">
                                 <div class="xe-user-img">
-                                    <img class="img-circle lazy"
-                                        src="https://ae01.alicdn.com/kf/Hb8137651255b4225b61a37f676224024p.jpg"
+                                    <img class="img-circle lazy" src="./nav-imgs/toutiao.ico"
                                         onerror="javascript:this.src='https://tools.liumingye.cn/wp-content/themes/WebStack/images/favicon.png'"
                                         width="40">
                                 </div>
                                 <div class="xe-comment">
                                     <div class="xe-user-name overflowClip_1">
-                                        <strong>天翼小站</strong>
+                                        <strong>今日头条</strong>
                                     </div>
-                                    <p class="overflowClip_2">天翼云盘资源收集分享小站</p>
-                                </div>
-                            </div>
-                        </a>
-                    </div>
-
-                    <div class="xe-card col-sm-4 col-md-3 ">
-                        <a href="https://tool.liumingye.cn/unlock-music" target="_blank"
-                            class="xe-widget xe-conversations box2 label-info" data-toggle="tooltip"
-                            data-placement="bottom" title="https://tool.liumingye.cn/unlock-music">
-                            <div class="xe-comment-entry">
-                                <div class="xe-user-img">
-                                    <img class="img-circle lazy"
-                                        src="https://ae01.alicdn.com/kf/H0179d860d8344b91b02d728e01a74d04Q.jpg"
-                                        onerror="javascript:this.src='https://tools.liumingye.cn/wp-content/themes/WebStack/images/favicon.png'"
-                                        width="40">
-                                </div>
-                                <div class="xe-comment">
-                                    <div class="xe-user-name overflowClip_1">
-                                        <strong>加密音乐文件解锁 1.9.0</strong>
-                                    </div>
-                                    <p class="overflowClip_2">解锁QQ音乐网易云音乐加密的ncm,mflac,mgg等音频文件</p>
+                                    <p class="overflowClip_2">你关心的才是头条</p>
                                 </div>
                             </div>
                         </a>
 
                     </div>
                     <div class="xe-card col-sm-4 col-md-3 ">
-
-                        <a href="http://tools.liumingye.cn/music" target="_blank"
+                        <a href="https://hs.blizzard.cn/" target="_blank"
                             class="xe-widget xe-conversations box2 label-info" data-toggle="tooltip"
-                            data-placement="bottom" title="http://tools.liumingye.cn/music">
+                            data-placement="bottom" title="https://hs.blizzard.cn/">
                             <div class="xe-comment-entry">
                                 <div class="xe-user-img">
-                                    <img class="img-circle lazy"
-                                        src="https://ae01.alicdn.com/kf/H1e9c800bdc4840d48bee31acfdb41f06J.jpg"
+                                    <img class="img-circle lazy" src="./nav-imgs/hs.ico"
                                         onerror="javascript:this.src='https://tools.liumingye.cn/wp-content/themes/WebStack/images/favicon.png'"
                                         width="40">
                                 </div>
                                 <div class="xe-comment">
                                     <div class="xe-user-name overflowClip_1">
-                                        <strong>MyFreeMP3</strong>
+                                        <strong>炉石传说</strong>
                                     </div>
-                                    <p class="overflowClip_2">Free Music Downloads 320Kbps Songs MOBILE</p>
+                                    <p class="overflowClip_2">《炉石传说》官方网站_暴雪首款免费休闲卡牌网游</p>
                                 </div>
                             </div>
                         </a>
                     </div>
 
                     <div class="xe-card col-sm-4 col-md-3 ">
-                        <a href="http://tool.liumingye.cn/video" target="_blank"
+                        <a href="https://music.163.com/" target="_blank"
                             class="xe-widget xe-conversations box2 label-info" data-toggle="tooltip"
-                            data-placement="bottom" title="http://tool.liumingye.cn/video">
+                            data-placement="bottom" title="https://music.163.com/">
                             <div class="xe-comment-entry">
                                 <div class="xe-user-img">
-                                    <img class="img-circle lazy"
-                                        src="https://ae01.alicdn.com/kf/H1e9c800bdc4840d48bee31acfdb41f06J.jpg"
+                                    <img class="img-circle lazy" src="./nav-imgs/netease.ico"
                                         onerror="javascript:this.src='https://tools.liumingye.cn/wp-content/themes/WebStack/images/favicon.png'"
                                         width="40">
                                 </div>
                                 <div class="xe-comment">
                                     <div class="xe-user-name overflowClip_1">
-                                        <strong>全能VIP视频解析</strong>
+                                        <strong>网易云音乐</strong>
                                     </div>
-                                    <p class="overflowClip_2">为广大网友提供VIP视频在线免费解析服务，让你省去购买视频VIP费用</p>
+                                    <p class="overflowClip_2"></p>
                                 </div>
                             </div>
                         </a>
                     </div>
 
                     <div class="xe-card col-sm-4 col-md-3 ">
-                        <a href="http://tool.liumingye.cn/m3u8" target="_blank"
+                        <a href="https://www.soman.com/search.html?keyword=%E6%B5%B7%E8%B4%BC%E7%8E%8B" target="_blank"
                             class="xe-widget xe-conversations box2 label-info" data-toggle="tooltip"
-                            data-placement="bottom" title="http://tool.liumingye.cn/m3u8">
+                            data-placement="bottom"
+                            title="https://www.soman.com/search.html?keyword=%E6%B5%B7%E8%B4%BC%E7%8E%8B">
                             <div class="xe-comment-entry">
                                 <div class="xe-user-img">
-                                    <img class="img-circle lazy"
-                                        src="https://ae01.alicdn.com/kf/H1e9c800bdc4840d48bee31acfdb41f06J.jpg"
+                                    <img class="img-circle lazy" src="./nav-imgs/soman.ico"
                                         onerror="javascript:this.src='https://tools.liumingye.cn/wp-content/themes/WebStack/images/favicon.png'"
                                         width="40">
                                 </div>
                                 <div class="xe-comment">
                                     <div class="xe-user-name overflowClip_1">
-                                        <strong>M3U8在线播放器</strong>
+                                        <strong>海贼王漫画</strong>
                                     </div>
-                                    <p class="overflowClip_2">M3U8在线播放器</p>
+                                    <p class="overflowClip_2"></p>
                                 </div>
                             </div>
                         </a>
                     </div>
 
                     <div class="xe-card col-sm-4 col-md-3 ">
-                        <a href="https://lab.liumingye.cn" target="_blank"
+                        <a href="https://www.guokr.com/" target="_blank"
                             class="xe-widget xe-conversations box2 label-info" data-toggle="tooltip"
-                            data-placement="bottom" title="https://lab.liumingye.cn">
+                            data-placement="bottom" title="https://www.guokr.com/">
                             <div class="xe-comment-entry">
                                 <div class="xe-user-img">
-                                    <img class="img-circle lazy"
-                                        src="https://ae01.alicdn.com/kf/H2f9d7529051b404b84e8d5692336b5ebU.jpg"
+                                    <img class="img-circle lazy" src="./nav-imgs/guoke.png"
                                         onerror="javascript:this.src='https://tools.liumingye.cn/wp-content/themes/WebStack/images/favicon.png'"
                                         width="40">
                                 </div>
                                 <div class="xe-comment">
                                     <div class="xe-user-name overflowClip_1">
-                                        <strong>全网影片搜索</strong>
+                                        <strong>果壳网</strong>
                                     </div>
-                                    <p class="overflowClip_2">免VIP会员观看全网VIP影视及电视剧，影片每日更新及免费观看全国电视直播！</p>
+                                    <p class="overflowClip_2">科技有意思</p>
                                 </div>
                             </div>
                         </a>
-
                     </div>
                 </div>
+
                 <br />
-                <h4 class="text-gray" style="display: inline-block;" id="图片相关">图片相关</h4>
-                <div class="row">
-                    <div class="xe-card col-sm-4 col-md-3 ">
+                <h4 class="text-gray" style="display: inline-block;" id="内网相关">内网相关</h4>
 
-                        <a href="https://photokit.com/editor/?lang=zh" target="_blank"
-                            class="xe-widget xe-conversations box2 label-info" data-toggle="tooltip"
-                            data-placement="bottom" title="https://photokit.com/editor/?lang=zh">
-                            <div class="xe-comment-entry">
-                                <div class="xe-user-img">
-                                    <img class="img-circle lazy" src="https://photokit.com/favicon.ico"
-                                        onerror="javascript:this.src='https://tools.liumingye.cn/wp-content/themes/WebStack/images/favicon.png'"
-                                        width="40">
-                                </div>
-                                <div class="xe-comment">
-                                    <div class="xe-user-name overflowClip_1">
-                                        <strong>图片编辑器</strong>
-                                    </div>
-                                    <p class="overflowClip_2">PhotoKit集成了强大的在线图片编辑器，支持智能笔刷、画质增强、曝光修复等</p>
-                                </div>
-                            </div>
-                        </a>
-
-                    </div>
-                    <div class="xe-card col-sm-4 col-md-3 ">
-                        <a href="https://www.remove.bg/zh" target="_blank"
-                            class="xe-widget xe-conversations box2 label-info" data-toggle="tooltip"
-                            data-placement="bottom" title="https://www.remove.bg/zh">
-                            <div class="xe-comment-entry">
-                                <div class="xe-user-img">
-                                    <img class="img-circle lazy" src="https://www.remove.bg/apple-touch-icon.png"
-                                        onerror="javascript:this.src='https://tools.liumingye.cn/wp-content/themes/WebStack/images/favicon.png'"
-                                        width="40">
-                                </div>
-                                <div class="xe-comment">
-                                    <div class="xe-user-name overflowClip_1">
-                                        <strong>图片背景消除</strong>
-                                    </div>
-                                    <p class="overflowClip_2">无需点击，即可在 5 秒钟内 100% 自动消除背景</p>
-                                </div>
-                            </div>
-                        </a>
-                    </div>
-
-                    <div class="xe-card col-sm-4 col-md-3 ">
-                        <a href="https://tool.liumingye.cn/wallpaper" target="_blank"
-                            class="xe-widget xe-conversations box2 label-info" data-toggle="tooltip"
-                            data-placement="bottom" title="https://tool.liumingye.cn/wallpaper">
-                            <div class="xe-comment-entry">
-                                <div class="xe-user-img">
-                                    <img class="img-circle lazy"
-                                        src="https://ae01.alicdn.com/kf/H029f034186a3418a958d273e0a54e5abL.jpg"
-                                        onerror="javascript:this.src='https://tools.liumingye.cn/wp-content/themes/WebStack/images/favicon.png'"
-                                        width="40">
-                                </div>
-                                <div class="xe-comment">
-                                    <div class="xe-user-name overflowClip_1">
-                                        <strong>高清壁纸库</strong>
-                                    </div>
-                                    <p class="overflowClip_2">
-                                        在线壁纸提供高清电脑壁纸下载,包括美女,游戏,动漫,动物,汽车,体育,广告,影视,明星,风景,绘画,节日,花卉等经典壁纸</p>
-                                </div>
-                            </div>
-                        </a>
-                    </div>
-
-                    <div class="xe-card col-sm-4 col-md-3 ">
-                        <a href="https://tool.liumingye.cn/bingimg" target="_blank"
-                            class="xe-widget xe-conversations box2 label-info" data-toggle="tooltip"
-                            data-placement="bottom" title="https://tool.liumingye.cn/bingimg">
-                            <div class="xe-comment-entry">
-                                <div class="xe-user-img">
-                                    <img class="img-circle lazy"
-                                        src="https://ae01.alicdn.com/kf/H1e9c800bdc4840d48bee31acfdb41f06J.jpg"
-                                        onerror="javascript:this.src='https://tools.liumingye.cn/wp-content/themes/WebStack/images/favicon.png'"
-                                        width="40">
-                                </div>
-                                <div class="xe-comment">
-                                    <div class="xe-user-name overflowClip_1">
-                                        <strong>每日 BING 图</strong>
-                                    </div>
-                                    <p class="overflowClip_2">获得微软必应的每日图片，开放获取Bing每日背景图片接口</p>
-                                </div>
-                            </div>
-                        </a>
-
-                    </div>
-                </div>
-                <br />
-                <h4 class="text-gray" style="display: inline-block;" id="游戏相关">游戏相关</h4>
                 <div class="row">
                     <div class="xe-card col-sm-4 col-md-3 ">
                         <a href="https://tool.liumingye.cn/majiang" target="_blank"
@@ -680,46 +581,46 @@
                             </div>
                         </a>
                     </div>
-                    <div class="xe-card col-sm-4 col-md-3 ">
-                        <a href="http://tool.liumingye.cn/watermelon" target="_blank"
-                            class="xe-widget xe-conversations box2 label-info" data-toggle="tooltip"
-                            data-placement="bottom" title="http://tool.liumingye.cn/watermelon">
-                            <div class="xe-comment-entry">
-                                <div class="xe-user-img">
-                                    <img class="img-circle lazy"
-                                        src="https://ae01.alicdn.com/kf/Hc7dca8e99fc74c92bd8c648885323b4b8.jpg"
-                                        onerror="javascript:this.src='https://tools.liumingye.cn/wp-content/themes/WebStack/images/favicon.png'"
-                                        width="40">
-                                </div>
-                                <div class="xe-comment">
-                                    <div class="xe-user-name overflowClip_1">
-                                        <strong>合成大西瓜</strong>
-                                    </div>
-                                    <p class="overflowClip_2">控制水果下落位置，碰撞合成</p>
-                                </div>
-                            </div>
-                        </a>
-                    </div>
                 </div>
+
                 <br />
-                <h4 class="text-gray" style="display: inline-block;" id="其他工具">其他工具</h4>
+                <h4 class="text-gray" style="display: inline-block;" id="技术相关">技术相关</h4>
+
                 <div class="row">
                     <div class="xe-card col-sm-4 col-md-3 ">
-                        <a href="https://tool.liumingye.cn/password" target="_blank"
-                            class="xe-widget xe-conversations box2 label-info" data-toggle="tooltip"
-                            data-placement="bottom" title="https://tool.liumingye.cn/password">
+                        <a href="https://gitee.com/" target="_blank" class="xe-widget xe-conversations box2 label-info"
+                            data-toggle="tooltip" data-placement="bottom" title=https://gitee.com />
+                        <div class="xe-comment-entry">
+                            <div class="xe-user-img">
+                                <img class="img-circle lazy" src="./nav-imgs/gitee.ico"
+                                    onerror="javascript:this.src='https://tools.liumingye.cn/wp-content/themes/WebStack/images/favicon.png'"
+                                    width="40">
+                            </div>
+                            <div class="xe-comment">
+                                <div class="xe-user-name overflowClip_1">
+                                    <strong>码云</strong>
+                                </div>
+                                <p class="overflowClip_2">代码托管·协作开发平台</p>
+                            </div>
+                        </div>
+                        </a>
+
+                    </div>
+                    <div class="xe-card col-sm-4 col-md-3 ">
+
+                        <a href="https://github.com/" target="_blank" class="xe-widget xe-conversations box2 label-info"
+                            data-toggle="tooltip" data-placement="bottom" title="https://github.com/">
                             <div class="xe-comment-entry">
                                 <div class="xe-user-img">
-                                    <img class="img-circle lazy"
-                                        src="https://ae01.alicdn.com/kf/Hb3a704b052234c6096304af3772f4e84O.jpg"
+                                    <img class="img-circle lazy" src="./nav-imgs/github.ico"
                                         onerror="javascript:this.src='https://tools.liumingye.cn/wp-content/themes/WebStack/images/favicon.png'"
                                         width="40">
                                 </div>
                                 <div class="xe-comment">
                                     <div class="xe-user-name overflowClip_1">
-                                        <strong>随机密码生成器</strong>
+                                        <strong>Github</strong>
                                     </div>
-                                    <p class="overflowClip_2">可根据选择生成不同字符不同长度的随机密码</p>
+                                    <p class="overflowClip_2">Where the world builds software                                    </p>
                                 </div>
                             </div>
                         </a>
@@ -727,31 +628,9 @@
                     </div>
                     <div class="xe-card col-sm-4 col-md-3 ">
 
-                        <a href="http://aria2.liumingye.cn" target="_blank"
+                        <a href="https://labuladong.gitee.io/algo/" target="_blank"
                             class="xe-widget xe-conversations box2 label-info" data-toggle="tooltip"
-                            data-placement="bottom" title="http://aria2.liumingye.cn">
-                            <div class="xe-comment-entry">
-                                <div class="xe-user-img">
-                                    <img class="img-circle lazy"
-                                        src="https://ae01.alicdn.com/kf/H801ea59ea2994429ada9e25b33811e796.jpg"
-                                        onerror="javascript:this.src='https://tools.liumingye.cn/wp-content/themes/WebStack/images/favicon.png'"
-                                        width="40">
-                                </div>
-                                <div class="xe-comment">
-                                    <div class="xe-user-name overflowClip_1">
-                                        <strong>AriaNg 1.2.2</strong>
-                                    </div>
-                                    <p class="overflowClip_2">让 aria2 更容易使用的现代 Web 前端</p>
-                                </div>
-                            </div>
-                        </a>
-
-                    </div>
-                    <div class="xe-card col-sm-4 col-md-3 ">
-
-                        <a href="https://tool.liumingye.cn/ljcx" target="_blank"
-                            class="xe-widget xe-conversations box2 label-info" data-toggle="tooltip"
-                            data-placement="bottom" title="https://tool.liumingye.cn/ljcx">
+                            data-placement="bottom" title="https://labuladong.gitee.io/algo/">
                             <div class="xe-comment-entry">
                                 <div class="xe-user-img">
                                     <img class="img-circle lazy"
@@ -761,52 +640,29 @@
                                 </div>
                                 <div class="xe-comment">
                                     <div class="xe-user-name overflowClip_1">
-                                        <strong>垃圾分类智能查询</strong>
+                                        <strong>算法小抄</strong>
                                     </div>
-                                    <p class="overflowClip_2">垃圾分类,指按一定规定或标准将垃圾分类储存、分类投放和分类搬运,从而转变成公共资源的一系列活动的总称。</p>
+                                    <p class="overflowClip_2">LABULADONG 的算法网站
+                                    </p>
                                 </div>
                             </div>
                         </a>
 
                     </div>
                     <div class="xe-card col-sm-4 col-md-3 ">
-                        <a href="https://tool.liumingye.cn/ip" target="_blank"
-                            class="xe-widget xe-conversations box2 label-info" data-toggle="tooltip"
-                            data-placement="bottom" title="https://tool.liumingye.cn/ip">
+                        <a href="https://juejin.cn/" target="_blank" class="xe-widget xe-conversations box2 label-info"
+                            data-toggle="tooltip" data-placement="bottom" title="https://juejin.cn/">
                             <div class="xe-comment-entry">
                                 <div class="xe-user-img">
-                                    <img class="img-circle lazy"
-                                        src="https://ae01.alicdn.com/kf/H1e9c800bdc4840d48bee31acfdb41f06J.jpg"
+                                    <img class="img-circle lazy" src="./nav-imgs/juejin.ico"
                                         onerror="javascript:this.src='https://tools.liumingye.cn/wp-content/themes/WebStack/images/favicon.png'"
                                         width="40">
                                 </div>
                                 <div class="xe-comment">
                                     <div class="xe-user-name overflowClip_1">
-                                        <strong>IP地址查询</strong>
+                                        <strong>掘金</strong>
                                     </div>
-                                    <p class="overflowClip_2">查询本机IP地址，查询指定IP的位置</p>
-                                </div>
-                            </div>
-                        </a>
-
-                    </div>
-                    <div class="xe-card col-sm-4 col-md-3 ">
-
-                        <a href="https://rsshub.liumingye.cn" target="_blank"
-                            class="xe-widget xe-conversations box2 label-info" data-toggle="tooltip"
-                            data-placement="bottom" title="https://rsshub.liumingye.cn">
-                            <div class="xe-comment-entry">
-                                <div class="xe-user-img">
-                                    <img class="img-circle lazy"
-                                        src="https://ae01.alicdn.com/kf/Hc4b9bfe9526546d6bb2db5358b3395e7v.jpg"
-                                        onerror="javascript:this.src='https://tools.liumingye.cn/wp-content/themes/WebStack/images/favicon.png'"
-                                        width="40">
-                                </div>
-                                <div class="xe-comment">
-                                    <div class="xe-user-name overflowClip_1">
-                                        <strong>RSSHub 7月25日更新</strong>
-                                    </div>
-                                    <p class="overflowClip_2">一个开源、简单易用、易于扩展的 RSS 生成器，可以给任何奇奇怪怪的内容生成 RSS 订阅源</p>
+                                    <p class="overflowClip_2">代码不止，掘金不停</p>
                                 </div>
                             </div>
                         </a>
@@ -814,42 +670,40 @@
                     </div>
                     <div class="xe-card col-sm-4 col-md-3 ">
 
-                        <a href="https://tool.liumingye.cn/md5" target="_blank"
+                        <a href="https://www.runoob.com/" target="_blank"
                             class="xe-widget xe-conversations box2 label-info" data-toggle="tooltip"
-                            data-placement="bottom" title="https://tool.liumingye.cn/md5">
+                            data-placement="bottom" title="https://www.runoob.com/">
                             <div class="xe-comment-entry">
                                 <div class="xe-user-img">
-                                    <img class="img-circle lazy"
-                                        src="https://ae01.alicdn.com/kf/H1e9c800bdc4840d48bee31acfdb41f06J.jpg"
+                                    <img class="img-circle lazy" src="./nav-imgs/cailiao.ico"
                                         onerror="javascript:this.src='https://tools.liumingye.cn/wp-content/themes/WebStack/images/favicon.png'"
                                         width="40">
                                 </div>
                                 <div class="xe-comment">
                                     <div class="xe-user-name overflowClip_1">
-                                        <strong>MD5加密工具</strong>
+                                        <strong>菜鸟教程</strong>
                                     </div>
-                                    <p class="overflowClip_2">MD5加密算法是一种国际知名的不可逆加密方式</p>
+                                    <p class="overflowClip_2">学的不仅是技术，更是梦想！</p>
                                 </div>
                             </div>
                         </a>
                     </div>
 
                     <div class="xe-card col-sm-4 col-md-3 ">
-                        <a href="https://tool.liumingye.cn/pinyin" target="_blank"
+                        <a href="https://docs.oracle.com/javase/tutorial/" target="_blank"
                             class="xe-widget xe-conversations box2 label-info" data-toggle="tooltip"
-                            data-placement="bottom" title="https://tool.liumingye.cn/pinyin">
+                            data-placement="bottom" title="https://docs.oracle.com/javase/tutorial/">
                             <div class="xe-comment-entry">
                                 <div class="xe-user-img">
-                                    <img class="img-circle lazy"
-                                        src="https://ae01.alicdn.com/kf/H1e9c800bdc4840d48bee31acfdb41f06J.jpg"
+                                    <img class="img-circle lazy" src="./nav-imgs/oracle.ico"
                                         onerror="javascript:this.src='https://tools.liumingye.cn/wp-content/themes/WebStack/images/favicon.png'"
                                         width="40">
                                 </div>
                                 <div class="xe-comment">
                                     <div class="xe-user-name overflowClip_1">
-                                        <strong>中文转拼音</strong>
+                                        <strong>Java 教程</strong>
                                     </div>
-                                    <p class="overflowClip_2">汉字拼音在线转换工具，可对拼音标注声调，并能识别多音字</p>
+                                    <p class="overflowClip_2">The Java™ Tutorials</p>
                                 </div>
                             </div>
                         </a>
@@ -857,44 +711,85 @@
                 </div>
 
                 <br />
-                <h4 class="text-gray" style="display: inline-block;" id="编程开发">编程开发</h4>
+                <h4 class="text-gray" style="display: inline-block;" id="其他">其他</h4>
 
                 <div class="row">
                     <div class="xe-card col-sm-4 col-md-3 ">
-
-                        <a href="https://diving.npmtrend.com" target="_blank"
+                        <a href="https://www.coolist.net/" target="_blank"
                             class="xe-widget xe-conversations box2 label-info" data-toggle="tooltip"
-                            data-placement="bottom" title="https://diving.npmtrend.com">
+                            data-placement="bottom" title="https://www.coolist.net/">
                             <div class="xe-comment-entry">
                                 <div class="xe-user-img">
-                                    <img class="img-circle lazy" src="https://diving.npmtrend.com/favicon.ico"
+                                    <img class="img-circle lazy" src="./nav-imgs/coolist.ico"
                                         onerror="javascript:this.src='https://tools.liumingye.cn/wp-content/themes/WebStack/images/favicon.png'"
                                         width="40">
                                 </div>
                                 <div class="xe-comment">
                                     <div class="xe-user-name overflowClip_1">
-                                        <strong>diving</strong>
+                                        <strong>酷软清单</strong>
                                     </div>
-                                    <p class="overflowClip_2">docker镜像生成每层的分析数据(增加、删除文件等)，避免重复覆盖的无用数据</p>
+                                    <p class="overflowClip_2">一个软件精选清单！</p>
                                 </div>
                             </div>
                         </a>
                     </div>
 
                     <div class="xe-card col-sm-4 col-md-3 ">
-                        <a href="https://devhints.io" target="_blank" class="xe-widget xe-conversations box2 label-info"
-                            data-toggle="tooltip" data-placement="bottom" title="https://devhints.io">
+                        <a href="https://www.iplaysoft.com/" target="_blank"
+                            class="xe-widget xe-conversations box2 label-info" data-toggle="tooltip"
+                            data-placement="bottom" title="https://www.iplaysoft.com/">
                             <div class="xe-comment-entry">
                                 <div class="xe-user-img">
-                                    <img class="img-circle lazy" src="https://devhints.io/assets/favicon.png"
+                                    <img class="img-circle lazy" src="./nav-imgs/iplaysoft.jpg"
                                         onerror="javascript:this.src='https://tools.liumingye.cn/wp-content/themes/WebStack/images/favicon.png'"
                                         width="40">
                                 </div>
                                 <div class="xe-comment">
                                     <div class="xe-user-name overflowClip_1">
-                                        <strong>开发者速查表</strong>
+                                        <strong>异次元软件</strong>
                                     </div>
-                                    <p class="overflowClip_2">为开发者准备的速查表</p>
+                                    <p class="overflowClip_2">软件改变生活！</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="xe-card col-sm-4 col-md-3 ">
+                        <a href="https://www.wenshushu.cn/" target="_blank"
+                            class="xe-widget xe-conversations box2 label-info" data-toggle="tooltip"
+                            data-placement="bottom" title="https://www.wenshushu.cn/">
+                            <div class="xe-comment-entry">
+                                <div class="xe-user-img">
+                                    <img class="img-circle lazy" src="./nav-imgs/wenshushu.ico"
+                                        onerror="javascript:this.src='https://tools.liumingye.cn/wp-content/themes/WebStack/images/favicon.png'"
+                                        width="40">
+                                </div>
+                                <div class="xe-comment">
+                                    <div class="xe-user-name overflowClip_1">
+                                        <strong>文叔叔</strong>
+                                    </div>
+                                    <p class="overflowClip_2">传文件，找文叔叔（大文件、永不限速）</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="xe-card col-sm-4 col-md-3 ">
+                        <a href="https://filehelper.weixin.qq.com/" target="_blank"
+                            class="xe-widget xe-conversations box2 label-info" data-toggle="tooltip"
+                            data-placement="bottom" title="https://filehelper.weixin.qq.com/">
+                            <div class="xe-comment-entry">
+                                <div class="xe-user-img">
+                                    <img class="img-circle lazy" src="./nav-imgs/wechat.png"
+                                        onerror="javascript:this.src='https://tools.liumingye.cn/wp-content/themes/WebStack/images/favicon.png'"
+                                        width="40">
+                                </div>
+                                <div class="xe-comment">
+                                    <div class="xe-user-name overflowClip_1">
+                                        <strong>微信文件传输助手网页版</strong>
+                                    </div>
+                                    <p class="overflowClip_2">使用文件传输助手，手机电脑轻松互传文件。
+                                    </p>
                                 </div>
                             </div>
                         </a>
@@ -905,7 +800,7 @@
             <footer class="main-footer sticky footer-type-1">
                 <div class="footer-inner">
                     <div class="footer-text">
-                        <p>Copyright © 2021-2022 网址导航</p>
+                        <p>Copyright © 2021-2022 ac 网址导航</p>
                     </div>
                 </div>
                 <div class="go-up">
