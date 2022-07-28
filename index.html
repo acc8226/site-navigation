@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="zh-CN">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no">
@@ -8,11 +9,20 @@
     <meta name="keywords" content="网址导航">
     <meta name="description" content="网址导航">
     <meta name='robots' content='max-image-preview:large' />
-    <link rel='stylesheet' id='font-awesome-css'  href='https://fastly.jsdelivr.net/npm/font-awesome@4.7.0/css/font-awesome.min.css?ver=5.9.3' type='text/css' media='all' />
+    <link rel='stylesheet' id='font-awesome-css'
+        href='https://fastly.jsdelivr.net/npm/font-awesome@4.7.0/css/font-awesome.min.css?ver=5.9.3' type='text/css'
+        media='all' />
     <link rel='stylesheet' id='bootstrap-css' href='./nav-css/bootstrap.min.css' type='text/css' media='all' />
     <link rel='stylesheet' id='nav-css' href='./nav-css/nav.css' type='text/css' media='all' />
     <script src='./nav-js/jquery.min.js' id='jquery-js'></script>
+    <style type="text/css">
+        .darkmode-layer,
+        .darkmode-toggle {
+            z-index: 500;
+        }
+    </style>
 </head>
+
 <body class="page-body white">
     <div class="cursor"></div>
     <div class="page-container">
@@ -212,14 +222,15 @@
                     </div>
                 </div>
                 <form action="?s=" method="get" target="_blank" id="super-search-fm"><input type="text" id="search-text"
-                        placeholder="输入关键字搜索" style="outline:0"><button type="submit"><i
-                            class="fa fa-search "></i></button></form>
+                        placeholder="输入关键字搜索" style="outline:0">
+                        <button type="submit"><i class="fa fa-search"></i></button>
+                </form>
                 <div class="set-check hidden-xs">
                     <input type="checkbox" id="set-search-blank" class="bubble-3" autocomplete="off">
                 </div>
             </div>
             <script>
-                !function(){function g(){h(),i(),j(),k()}function h(){d.checked=s()}function i(){var a=document.querySelector('input[name="type"][value="'+p()+'"]');a&&(a.checked=!0,l(a))}function j(){v(u())}function k(){w(t())}function l(a){for(var b=0;b<e.length;b++)e[b].classList.remove("s-current");a.parentNode.parentNode.parentNode.classList.add("s-current")}function m(a,b){window.localStorage.setItem("superSearch"+a,b)}function n(a){return window.localStorage.getItem("superSearch"+a)}function o(a){f=a.target,v(u()),w(a.target.value),m("type",a.target.value),c.focus(),l(a.target)}function p(){var b=n("type");return b||a[0].value}function q(a){m("newWindow",a.target.checked?1:-1),x(a.target.checked)}function r(a){return a.preventDefault(),""==c.value?(c.focus(),!1):(w(t()+c.value),x(s()),s()?window.open(b.action,+new Date):location.href=b.action,void 0)}function s(){var a=n("newWindow");return a?1==a:!0}function t(){return document.querySelector('input[name="type"]:checked').value}function u(){return document.querySelector('input[name="type"]:checked').getAttribute("data-placeholder")}function v(a){c.setAttribute("placeholder",a)}function w(a){b.action=a}function x(a){a?b.target="_blank":b.removeAttribute("target")}var y,a=document.querySelectorAll('input[name="type"]'),b=document.querySelector("#super-search-fm"),c=document.querySelector("#search-text"),d=document.querySelector("#set-search-blank"),e=document.querySelectorAll(".search-group"),f=a[0];for(g(),y=0;y<a.length;y++)a[y].addEventListener("change",o);d.addEventListener("change",q),b.addEventListener("submit",r)}();
+                !function () { function g() { h(), i(), j(), k() } function h() { d.checked = s() } function i() { var a = document.querySelector('input[name="type"][value="' + p() + '"]'); a && (a.checked = !0, l(a)) } function j() { v(u()) } function k() { w(t()) } function l(a) { for (var b = 0; b < e.length; b++)e[b].classList.remove("s-current"); a.parentNode.parentNode.parentNode.classList.add("s-current") } function m(a, b) { window.localStorage.setItem("superSearch" + a, b) } function n(a) { return window.localStorage.getItem("superSearch" + a) } function o(a) { f = a.target, v(u()), w(a.target.value), m("type", a.target.value), c.focus(), l(a.target) } function p() { var b = n("type"); return b || a[0].value } function q(a) { m("newWindow", a.target.checked ? 1 : -1), x(a.target.checked) } function r(a) { return a.preventDefault(), "" == c.value ? (c.focus(), !1) : (w(t() + c.value), x(s()), s() ? window.open(b.action, +new Date) : location.href = b.action, void 0) } function s() { var a = n("newWindow"); return a ? 1 == a : !0 } function t() { return document.querySelector('input[name="type"]:checked').value } function u() { return document.querySelector('input[name="type"]:checked').getAttribute("data-placeholder") } function v(a) { c.setAttribute("placeholder", a) } function w(a) { b.action = a } function x(a) { a ? b.target = "_blank" : b.removeAttribute("target") } var y, a = document.querySelectorAll('input[name="type"]'), b = document.querySelector("#super-search-fm"), c = document.querySelector("#search-text"), d = document.querySelector("#set-search-blank"), e = document.querySelectorAll(".search-group"), f = a[0]; for (g(), y = 0; y < a.length; y++)a[y].addEventListener("change", o); d.addEventListener("change", q), b.addEventListener("submit", r) }();
             </script>
             <div class="sites-list" style="margin-bottom: 8.5rem;">
                 <div class="row">
@@ -382,8 +393,7 @@
                             data-placement="bottom" title="ituring.com.cn">
                             <div class="xe-comment-entry">
                                 <div class="xe-user-img">
-                                    <img class="img-circle lazy"
-                                        src="./nav-imgs/ituring.webp"
+                                    <img class="img-circle lazy" src="./nav-imgs/ituring.webp"
                                         onerror="javascript:this.src='https://tools.liumingye.cn/wp-content/themes/WebStack/images/favicon.png'"
                                         width="40">
                                 </div>
@@ -403,8 +413,7 @@
                             data-placement="bottom" title="qikegu.com">
                             <div class="xe-comment-entry">
                                 <div class="xe-user-img">
-                                    <img class="img-circle lazy"
-                                        src="./nav-imgs/favicon.png"
+                                    <img class="img-circle lazy" src="./nav-imgs/favicon.png"
                                         onerror="javascript:this.src='https://tools.liumingye.cn/wp-content/themes/WebStack/images/favicon.png'"
                                         width="40">
                                 </div>
@@ -476,7 +485,7 @@
                                     <div class="xe-user-name overflowClip_1">
                                         <strong>炉石传说</strong>
                                     </div>
-                                    <p class="overflowClip_2">《炉石传说》官方网站_暴雪首款免费休闲卡牌网游</p>
+                                    <p class="overflowClip_2">暴雪首款免费休闲卡牌网游</p>
                                 </div>
                             </div>
                         </a>
@@ -574,19 +583,19 @@
                     <div class="xe-card col-sm-4 col-md-3 ">
                         <a href="https://gitee.com/" target="_blank" class="xe-widget xe-conversations box2 label-info"
                             data-toggle="tooltip" data-placement="bottom" title="gitee.com">
-                        <div class="xe-comment-entry">
-                            <div class="xe-user-img">
-                                <img class="img-circle lazy" src="./nav-imgs/gitee.ico"
-                                    onerror="javascript:this.src='https://tools.liumingye.cn/wp-content/themes/WebStack/images/favicon.png'"
-                                    width="40">
-                            </div>
-                            <div class="xe-comment">
-                                <div class="xe-user-name overflowClip_1">
-                                    <strong>码云</strong>
+                            <div class="xe-comment-entry">
+                                <div class="xe-user-img">
+                                    <img class="img-circle lazy" src="./nav-imgs/gitee.ico"
+                                        onerror="javascript:this.src='https://tools.liumingye.cn/wp-content/themes/WebStack/images/favicon.png'"
+                                        width="40">
                                 </div>
-                                <p class="overflowClip_2">代码托管·协作开发平台</p>
+                                <div class="xe-comment">
+                                    <div class="xe-user-name overflowClip_1">
+                                        <strong>码云</strong>
+                                    </div>
+                                    <p class="overflowClip_2">代码托管·协作开发平台</p>
+                                </div>
                             </div>
-                        </div>
                         </a>
                     </div>
 
@@ -603,7 +612,7 @@
                                     <div class="xe-user-name overflowClip_1">
                                         <strong>Github</strong>
                                     </div>
-                                    <p class="overflowClip_2">Where the world builds software                                    </p>
+                                    <p class="overflowClip_2">Where the world builds software </p>
                                 </div>
                             </div>
                         </a>
@@ -615,8 +624,7 @@
                             data-placement="bottom" title="labuladong.gitee.io/algo">
                             <div class="xe-comment-entry">
                                 <div class="xe-user-img">
-                                    <img class="img-circle lazy"
-                                        src="./nav-imgs/favicon.png"
+                                    <img class="img-circle lazy" src="./nav-imgs/favicon.png"
                                         onerror="javascript:this.src='https://tools.liumingye.cn/wp-content/themes/WebStack/images/favicon.png'"
                                         width="40">
                                 </div>
@@ -775,11 +783,13 @@
                 </div>
                 <br />
             </div>
-            
+
             <footer class="main-footer sticky footer-type-1">
                 <div class="footer-inner">
                     <div class="footer-text">
-                        <p>本站收集内容均来自网络，源码修改于 <a href='https://tools.liumingye.cn/'>tools.liumingye.cn</a>。如对您造成了侵权，请联系本人进行删除。邮箱：acc8226@vip.qq.com</p>
+                        <p>本站内容均来自网络，源码修改于 <a
+                                href='https://tools.liumingye.cn/'>tools.liumingye.cn</a>。如对您造成了侵权，请联系本人进行删除。邮箱：acc8226@qq.com
+                        </p>
                         <p>Copyright © 2022 ac网址导航</p>
                     </div>
                 </div>
@@ -856,5 +866,27 @@
     <script src='./nav-js/bootstrap.3.4.1min.js' id='bootstrap-js'></script>
     <script src='./nav-js/TweenMax.1.20.5.js' id='TweenMax-js'></script>
     <script src='./nav-js/app.js' id='appjs-js'></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/darkmode-js@1.5.7/lib/darkmode-js.min.js"></script>
+    <script>
+        function addDarkmodeWidget() {
+            const options = {
+                bottom: '75px', // default: '32px'
+                right: '14px', // default: '32px'
+                left: 'unset', // default: 'unset'
+                time: '0.6s', // default: '0.3s'
+                mixColor: '#fff', // default: '#fff'
+                backgroundColor: '#fff',  // default: '#fff'
+                buttonColorDark: '#100f2c',  // default: '#100f2c'
+                buttonColorLight: '#fff', // default: '#fff'
+                saveInCookies: false, // default: true,
+                label: '🌓', // default: ''
+                autoMatchOsTheme: true // default: true
+            }
+            new Darkmode(options).showWidget();
+        }
+        window.addEventListener('load', addDarkmodeWidget);
+    </script>
 </body>
+
 </html>
