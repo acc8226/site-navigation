@@ -10,8 +10,9 @@
 
 先从 <https://tools.liumingye.cn/> 查看源码，然后填充自己的内容。
 
-图标 icon 的获取：
+## 如何获取图标
 
-网页版：
+我更倾向于去应用宝搜索 app 的图标，然后下载，这样的图标更高清。
+<https://webcdn.m.qq.com/webapp/homepage/index.html#/>
 
-
+图标类的 icon 的获取：一般而言 域名后+"/favicon.ico"即可出现所需站点的ico图标。
