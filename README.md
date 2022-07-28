@@ -8,7 +8,7 @@
 
 ## 导航定制过程
 
-先从 https://tools.liumingye.cn/ 查看源码，然后填充自己的内容。
+先从 <https://tools.liumingye.cn/> 查看源码，然后填充自己的内容。
 
 图标 icon 的获取：
 
