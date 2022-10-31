@@ -2,7 +2,7 @@
 
 采用 HTML + CSS + JQ 开发的简单的静态页面，手机上查看效果也正常。搭配 github pages 或者 gitee pages 食用效果更佳！
 
-注：本项目修改于刘明野的工具箱<https://tools.liumingye.cn/> 右键并查看源代码。如有侵权，请联系我们，本站会尽快删除。
+注：本项目修改于刘明野的工具箱 <https://tools.liumingye.cn/> 右键并查看源代码。如有侵权，请联系我们，本站会尽快删除。
 
 ## 网址导航代码修改过程
 
