@@ -17,10 +17,14 @@
 
 ### 如何获取图标
 
-我更倾向于去应用宝搜索 app 的图标，然后下载，这样的图标更高清。
+图标类的 icon 的获取：一般而言为域名后 + "/favicon.ico"即可出现所需站点的 ico 图标。
+
+因此我更倾向于极限软件园-极限下载站-绿色免费软件下载基地找寻图标。这样的图标更高清。
+<http://www.jxdown.com/>
+
+如果还是没有则可以再去应用宝搜索 app 的图标。
 <https://webcdn.m.qq.com/webapp/homepage/index.html#/>
 
-图标类的 icon 的获取：一般而言 域名后+"/favicon.ico"即可出现所需站点的 ico 图标。
 
 ### 图标压缩
 
