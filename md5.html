@@ -20,7 +20,6 @@
                 currentChunk = 0,
                 spark = new SparkMD5.ArrayBuffer(),
                 frOnload = function (e) {
-                    //  log.innerHTML+="\nread chunk number "+parseInt(currentChunk+1)+" of "+chunks;
                     spark.append(e.target.result); // append array buffer
                     currentChunk++;
                     if (currentChunk < chunks)
@@ -31,6 +30,7 @@
                 frOnerror = function () {
                     log.innerHTML += "\糟糕，好像哪里错了.";
                 };
+
             function loadNext() {
                 var fileReader = new FileReader();
                 fileReader.onload = frOnload;
@@ -39,6 +39,7 @@
                     end = ((start + chunkSize) >= file.size) ? file.size : start + chunkSize;
                 fileReader.readAsArrayBuffer(blobSlice.call(file, start, end));
             };
+
             loadNext();
         });
     </script>

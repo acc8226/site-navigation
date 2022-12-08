@@ -25,7 +25,6 @@
 如果还是没有则可以再去应用宝搜索 app 的图标。
 <https://webcdn.m.qq.com/webapp/homepage/index.html#/>
 
-
 ### 图标压缩
 
 如果图标过大，甚至超过 50k 则可以对其进行压缩。我一般会采用在线压缩工具 <https://tinify.cn/> 进行压缩优化。
