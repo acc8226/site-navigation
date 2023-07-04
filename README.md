@@ -1,4 +1,6 @@
-# ac网址导航-争做简洁、高效的网址导航
+# ac 网址导航
+
+争做简洁、高效的网址导航！
 
 采用 HTML + CSS + JQ 开发的简单的静态页面，手机上查看效果也正常。搭配 github pages 或者 gitee pages 食用效果更佳！
 
@@ -12,12 +14,12 @@
 图片替换示例：
 
 ```html
-<img class="img-circle lazy" src="./imgs/mail.webp"
+<img src="./imgs/mail.webp" ...
 ```
 
 ### 如何获取图标
 
-图标类的 icon 的获取：一般而言为域名后 + "/favicon.ico"即可出现所需站点的 ico 图标。
+图标类的 icon 的获取：一般而言为域名后 + "/favicon.ico" 即可出现所需站点的 ico 图标。
 
 对于 PC 类的图标，我更倾向于极限软件园-极限下载站-绿色免费软件下载基地找寻图标。这样的图标更高清。
 <http://www.jxdown.com/>
